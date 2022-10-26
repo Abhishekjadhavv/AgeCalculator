@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---- custom css link ---- -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ---- custom js link ---- -->
+    <script src="script.js" defer></script> 
+
+    <title>Age Calculator</title>
+</head>
+<body class="flex justify-center">
+    <div class="container">
+        <label for="birthDate">Date of Birth</label>
+        <div class="birthDate" id="birthDate">
+           <select class="month"></select>
+           <select class="days"></select>
+           <input type="text" class="years" value="2022">
+        </div>
+
+        <label for="AgeDate">Age at the Date of</label>
+        <div class="AgeDate" id="AgeDate">
+           <select class="month"></select>
+           <select class="days"></select>
+           <input type="text" class="years" value="2022">
+        </div>
+
+        <button class="btn">Calculate</button>
+
+        <label for="Age">Result</label>
+        <div class="Result">
+            <span class="year">00</span>
+             years
+            <span class="mon">00</span>
+             months 
+            <span class="day">00</span>
+             days 
+        </div>
+    </div>
+</body>
+</html>

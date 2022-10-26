@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(157, 59, 248);
+    width: 100%;
+    height: 100vh;
+}
+
+/* --- custom classes ---- */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.btn{
+    display: block;
+    margin:  10px 0px 10px;
+    padding: 8px 20px;
+    border: none;
+    background: #aa5bf3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn:active{
+ transform: scale(0.9);
+}
+
+/* ---- container styling ---- */
+
+.container{
+    width: fit-content;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 4px;
+}
+
+.container label{
+    display: block;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+
+.container select,
+input{
+    padding: 5px 2px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 17px;
+    outline: none;
+    width: 66px;
+}
+
+.container select:focus,
+input:focus{
+    border: 2px solid rgb(149, 54, 237);
+}
+
+.birthDate{
+    margin-bottom: 10px;
+}
+.Result{
+    border-top: 1px solid #9d3bf8;
+    padding-top: 5px;
+    font-size: 17px;
+    display: none;
+}
+.Result.active{
+    display: block;
+}
